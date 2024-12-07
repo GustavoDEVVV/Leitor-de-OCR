@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Arquivos e Texto</title>
+</head>
+
+<body>
+    <h1>Envio de Arquivos e Texto</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data"> <!--Onde upa os documentos-->
+        <label for="file">Envie seus arquivos (Imagens ou PDFs):</label>
+        <input type="file" id="file" name="file" accept=".png, .jpg, .jpeg, .pdf" multiple required><br><br>
+
+        <label for="message">Escreva algo:</label> <!--Onde se escreve o que quer-->
+        <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
