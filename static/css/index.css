@@ -1,0 +1,90 @@
+body{
+    background-color: #1E1E2E;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.Logo img{
+    width: 15rem;
+    padding: 2rem;
+}
+
+.InformacoesIniciais{
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.InformacoesIniciais .texto p{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    width: 70rem;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.InformacoesIniciais .texto button{
+    background-color: #FFE66D;
+    color: #1E1E2E;
+    font-size: 2.5rem;
+    text-decoration: none;
+    border: none;
+    width: 40rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+}
+
+.InformacoesIniciais .img img{
+    width: 40rem;
+}
+
+.envioDeDocs{
+    padding: 2rem;
+}
+
+.envioDeDocs h1{
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.envioDeDocs form input{
+    border: 4px solid #FFE66D;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: aliceblue;
+    width: 40rem;
+    height: 10rem;
+}
+
+.envioDeDocs form textarea{
+    resize: none;
+    border: 2px solid #FFE66D;
+    width: 30rem;
+    height: 2rem;
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+textarea::placeholder {
+    color: aliceblue;
+    font-family: "Montserrat", serif;
+    font-size: 1.2rem;
+}
+
+.envioDeDocs form button{
+    background-color: #FF6B6B;
+    color: #1E1E2E;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}

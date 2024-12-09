@@ -4,20 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Envio de Arquivos e Texto</title>
 </head>
 
 <body>
-    <h1>Envio de Arquivos e Texto</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data"> <!--Onde upa os documentos-->
-        <label for="file">Envie seus arquivos (Imagens ou PDFs):</label>
-        <input type="file" id="file" name="file" accept=".png, .jpg, .jpeg, .pdf" multiple required><br><br>
 
-        <label for="message">Escreva algo:</label> <!--Onde se escreve o que quer-->
-        <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea><br><br>
+    <div class="Logo">
+        <img src="../static/imagens/Group 8.png" alt="">
+    </div>
 
-        <button type="submit">Enviar</button>
-    </form>
+    <section class="InformacoesIniciais">
+        <div class="texto">
+            <p>Esse é um projeto desenvolvido com o intuito de ser um leitor de documentos. Nele, você pode fazer o upload do documento desejado, e ele retornará somente as informações que você solicitou. O projeto ainda está em desenvolvimento, então, no momento, não funcionará com qualquer tipo de documento, apenas com os disponíveis para download abaixo. Em breve, ele receberá atualizações.</p>
+
+            <a href="../static/imagens/Group 7.png" class="download-btn" download="nome_do_arquivo">
+                <button>Baixe os Documentos aqui!</button>
+            </a>
+        </div>
+        <div class="img">
+            <img src="../static/imagens/Group 7.png" alt="">
+        </div>
+    </section>
+
+    <section class="envioDeDocs">
+        <h1>Adicione os Documentos aqui!</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data"> <!--Onde upa os documentos-->
+            <label for="file"></label>
+            <input type="file" id="file" name="file" accept=".pdf" multiple required><br><br>
+
+            <label for="message"></label> <!--Onde se escreve o que quer-->
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..."
+                required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 
 </html>

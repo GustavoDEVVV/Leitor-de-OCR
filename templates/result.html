@@ -4,12 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/results.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Resultado do OCR</title>
 </head>
 
 <body> <!--Pagina onde mostra os resultados-->
-    <h1>Informações Solicitadas</h1>
-    <p>{{ result }}</p> <!--Onde é mostrado o resultado-->
+
+    <div class="Logo">
+        <img src="../static/imagens/Group 8.png" alt="">
+    </div>
+    <section>
+        <h1>Informações Solicitadas</h1>
+        <p>{{ result }}</p> <!--Onde é mostrado o resultado-->
+        <a href="/">
+            <button>Nova Consulta</button>
+        </a>
+    </section>
 </body>
 
 </html>
