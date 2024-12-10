@@ -15,7 +15,6 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
     os.makedirs(app.config['UPLOAD_FOLDER'])
 
-
 # Rota para a página principal que exibe o formulário
 @app.route('/')
 def home():
@@ -47,9 +46,9 @@ def read_pdf(file_path):
 
 # Função principal para processar arquivos
 def process_file(file_path):
-    if file_path.endswith(('.png', '.jpg', '.jpeg')):
+    if file_path.endswith(('.png', '.jpg', '.jpeg')):  # Processar imagens
         return read_image(file_path)
-    elif file_path.endswith('.pdf'):
+    elif file_path.endswith('.pdf'):  # Processar PDFs
         return read_pdf(file_path)
     else:
         return "Formato de arquivo não suportado."
@@ -115,5 +114,6 @@ def upload_file():
         # Exibir o resultado em outra página HTML
         return render_template('result.html', result=requested_info)
 
+# Modificação para rodar no Render
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))  # Definindo a porta para o Render
