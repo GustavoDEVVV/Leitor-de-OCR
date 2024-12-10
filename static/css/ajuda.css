@@ -1,0 +1,104 @@
+body{
+    background-color: #1E1E2E;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.Logo img{
+    width: 15rem;
+    padding: 2rem;
+}
+
+.ComoBaixar{
+    padding: 2rem;
+}
+
+.ComoBaixar .textos h1{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.ComoBaixar .textos h2{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.ComoBaixar .ImgDeExemplo{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.ComoBaixar .ImgDeExemplo img{
+    width: 40rem;
+}
+
+.BtnBaixar button{
+    background-color: #FF6B6B;
+    color: #1E1E2E;
+    font-size: 2rem;
+    text-decoration: none;
+    border: none;
+    width: 30rem;
+    height: 3.5rem;
+    transition: 1s;
+    border-radius: 0.5rem;
+}
+
+.BtnBaixar button:hover{
+    background-color: #FFE66D;
+}
+
+.ComoUsar{
+    padding: 2rem;
+}
+
+.ComoUsar .textos2 h1{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.ComoUsar .textos2 h2{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.ComoUsar .ImgDeComoUsar{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.ComoUsar .ImgDeComoUsar img{
+    width: 30rem;
+}
+
+.BtnBaixar2 button{
+    background-color: #FF6B6B;
+    font-family: "Montserrat", serif;
+    color: #1E1E2E;
+    font-size: 2rem;
+    text-decoration: none;
+    border: none;
+    width: 20rem;
+    font-weight: 500;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.BtnBaixar2 button:hover{
+    background-color: #FFE66D;
+}

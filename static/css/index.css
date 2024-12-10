@@ -34,6 +34,11 @@ body{
     width: 40rem;
     height: 4rem;
     border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.InformacoesIniciais .texto button:hover{
+    background-color: #FF6B6B;
 }
 
 .InformacoesIniciais .img img{
@@ -57,7 +62,12 @@ body{
     padding: 2rem;
     color: aliceblue;
     width: 40rem;
+    transition: 0.5s;
     height: 10rem;
+}
+
+.envioDeDocs form input:hover{
+    border: 4px solid #FF6B6B;
 }
 
 .envioDeDocs form textarea{
@@ -69,6 +79,11 @@ body{
     background-color: transparent;
     border-radius: 1rem;
     padding: 1rem;
+    transition: 0.5s;
+}
+
+.envioDeDocs form textarea:hover{
+    border: 2px solid #FF6B6B;
 }
 
 textarea::placeholder {
@@ -87,4 +102,9 @@ textarea::placeholder {
     width: 10rem;
     height: 3rem;
     border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.envioDeDocs form button:hover{
+    background-color: #FFE66D;
 }

@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/results.css">
+    <link rel="stylesheet" href="../static/css/responsividade.css">
+    <link rel="icon" href="../static/imagens/Favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Resultado do OCR</title>
+    <title>Seus resultados</title>
 </head>
 
 <body> <!--Pagina onde mostra os resultados-->
 
     <div class="Logo">
-        <img src="../static/imagens/Group 8.png" alt="">
+        <img src="../static/imagens/Logo.png" alt="">
     </div>
-    <section>
-        <h1>Informações Solicitadas</h1>
+    <section class="ExibirResultados">
+        <h1>Seus resultados!</h1>
         <p>{{ result }}</p> <!--Onde é mostrado o resultado-->
         <a href="/">
             <button>Nova Consulta</button>
